@@ -67,6 +67,6 @@ quiz.style.display = "block";
 funtion showProgress(){
   for (let i = 0; i <= lastQuestion; i++)
   {
-    //progress.innerHTML += "";
+    progress.innerHTML += "<div class='prog' id ="+ i +"></div>";
   }
 }
