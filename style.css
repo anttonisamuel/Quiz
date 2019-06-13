@@ -17,7 +17,7 @@ body{
     font-weight: bolder;
     word-break: break-all;
     width:100px;
-    height:150px;
+    height:40px;
     border : 2px solid lightgrey;
     text-align: center;
     cursor: pointer;
@@ -58,7 +58,7 @@ body{
 }
 
 #choices{
-    width : 480px;
+    width : 420px;
     position: absolute;
     right : 0;
     top : 125px;
