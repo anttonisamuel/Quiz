@@ -64,9 +64,27 @@ showQuestions();
 quiz.style.display = "block";
 
 //Funtion to render progress
-funtion showProgress(){
+function showProgress(){
   for (let i = 0; i <= lastQuestion; i++)
   {
     progress.innerHTML += "<div class='prog' id ="+ i +"></div>";
   }
-}
+};
+
+let count = 0;
+const timeMax = 10;
+const totalBarWidth = 150;
+const addedBarWidth = totalBarWidth / timeMax;
+
+function addTimeGauge(){
+  if (count <= timeMax)
+  {
+    counter.innerHTML = count;
+    //Add green to time bar
+    count++;
+  }
+  else
+  {
+    count = 0;  
+  }
+};
